@@ -6,11 +6,11 @@ public class Solution
     {
         // num_list[Length - 1] > num_list[Length - 2] -> num_list[Length - 1] - num_list[Length - 2]
         // num_list[Length - 1] < num_list[Length - 2] -> num_list[Length - 1] * 2
-        int[] answer = new int[num_list.Length + 1];
-        Array.Copy(num_list, answer, num_list.Length);
-        answer[num_list.Length] = num_list[num_list.Length - 1] > num_list[num_list.Length - 2] ?
-                                    num_list[num_list.Length - 1] - num_list[num_list.Length - 2] :
-                                    num_list[num_list.Length - 1] * 2;
+        int length = num_list.Length;
+        int[] answer = new int[length + 1];
+        Array.Copy(num_list, answer, length);
+        answer[length] = num_list[length - 1] > num_list[length - 2] ?
+                            num_list[length - 1] - num_list[length - 2] : num_list[length - 1] * 2;
         return answer;
     }
 }
