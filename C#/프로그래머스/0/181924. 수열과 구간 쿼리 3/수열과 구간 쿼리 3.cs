@@ -4,9 +4,6 @@ public class Solution
 {
     public int[] solution(int[] arr, int[,] queries)
     {
-        int[] answer = arr;
-        int temp;
-        
         /*
         for(int i = 0; i < queries.GetLength(0); i++)
         {
@@ -16,6 +13,9 @@ public class Solution
             Console.WriteLine();
         }
         */
+        
+        int[] answer = arr;
+        int temp;
         
         for(int i = 0; i < queries.GetLength(0); i++)
         {
