@@ -19,7 +19,8 @@ public class Solution
         
         return (int)MathF.Floor(price - sale);
         */
-        
+
+        // 삼항연산자가 너무 많아서 별로인 것 같아서 조건문으로 바꿨는데 그게 오히려 더 길었네...ㅎ
         return price >= 500000 ? (int)(price * 0.8f) :
                price >= 300000 ? (int)(price * 0.9f) :
                price >= 100000 ? (int)(price * 0.95f) : price;
