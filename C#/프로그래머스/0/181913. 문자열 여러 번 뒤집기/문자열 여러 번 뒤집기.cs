@@ -14,6 +14,7 @@ public class Solution
         }
         */
         
+        /*
         string answer = my_string;
         char[] target;
         int start, end;
@@ -28,7 +29,18 @@ public class Solution
             
             answer = answer.Remove(start, end).Insert(start, string.Join("", target));
         }
+        */
+
+        char[] answer = my_string.ToCharArray();
+        int start, end;
         
-        return answer;
+        for(int i = 0; i < queries.GetLength(0); i++)
+        {
+            start = queries[i, 0];
+            end = queries[i, 1] - start + 1;
+            Array.Reverse(answer, start, end);
+        }
+        
+        return string.Join("", answer);
     }
 }
