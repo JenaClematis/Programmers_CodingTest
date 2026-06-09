@@ -4,6 +4,7 @@ public class Solution
 {
     public int[] solution(int n, int k)
     {
+        // Linq -> Enumerable 이건 몰랐네...
         int[] answer = new int[n / k];
         int index = 0;
         
