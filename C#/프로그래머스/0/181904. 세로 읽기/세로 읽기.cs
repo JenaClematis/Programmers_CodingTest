@@ -9,6 +9,7 @@ public class Solution
         string answer = "";
         char[] ch = my_string.ToCharArray();
         
+        // char[]로 변환 안하고 그냥 string[index]로도 되는 걸 잊었네;
         for(int i = 0; i < ch.Length / m; i++)
             answer += ch[m * i + c - 1];
         
