@@ -18,6 +18,7 @@ public class Solution
         */
         
         // AI 힌트로 알아낸 원형으로 연속된 N == % 연산
+        // 나머지는 등차수열의 N번째 구하는 공식이면 될 것 같아서 네이버 검색했었음
         return numbers[((k - 1) * 2) % numbers.Length];
     }
 }
