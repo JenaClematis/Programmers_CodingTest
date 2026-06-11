@@ -1,0 +1,13 @@
+using System;
+using System.Linq;
+
+public class Solution
+{
+    public int[] solution(int[] numbers, string direction)
+    {
+        if(direction == "right")
+            return numbers.Skip(numbers.Length - 1).Concat(numbers.SkipLast(1)).ToArray();
+        else
+            return numbers.Skip(1).Concat(numbers.SkipLast(numbers.Length - 1)).ToArray();
+    }
+}
