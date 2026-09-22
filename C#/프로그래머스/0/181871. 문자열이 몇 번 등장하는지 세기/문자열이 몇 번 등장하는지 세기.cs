@@ -8,10 +8,9 @@ public class Solution
         
         while(true)
         {
-            if(myString.IndexOf(pat, index) == -1)
+            if((index = myString.IndexOf(pat, index) + 1) == 0)
                 break;
             
-            index = myString.IndexOf(pat, index) + 1;
             answer++;
         }
         
