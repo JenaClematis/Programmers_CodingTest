@@ -1,9 +1,11 @@
 using System;
+using System.Linq;
 
 public class Solution
 {
     public int solution(int order)
     {
+        /*
         string str = order.ToString();
         int answer = 0, num = 0;
         
@@ -12,7 +14,8 @@ public class Solution
             num = Int32.Parse(str[i].ToString());
             answer += (num % 3 == 0 && num != 0) ? 1 : 0;
         }
+        */
         
-        return answer;
+        return order.ToString().Count(num => num == '3' || num == '6' || num == '9');
     }
 }
